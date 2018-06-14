@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="http://paulgoddarddesign.com/images/apple-icon.jpg">
     <link rel="icon" type="image/png" sizes="96x96" href="http://paulgoddarddesign.com/images/favicon.jpg">
     <title>Material Email Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="http://paulgoddarddesign.com/js/ripple.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
@@ -22,8 +22,8 @@
       .appleBody a {color:#212121; text-decoration: none;}
       .appleFooter a {color:#212121!important; text-decoration: none!important;}
       /* END iOS BLUE LINKS */
-      img {color: #ffffff;text-align: center;font-family: Open Sans, Helvetica, Arial, sans-serif;display: block;}
-      body {margin: 0;padding: 0;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;font-family: 'Open Sans', Helvetica, Arial, sans-serif!important;}
+      img {color: #ffffff;text-align: center;font-family: Roboto, Helvetica, Arial, sans-serif;display: block;}
+      body {margin: 0;padding: 0;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;font-family: 'Roboto', Helvetica, Arial, sans-serif!important;}
       body,#body_style {background: #fffffe;}
       table td {border-collapse: collapse;border-spacing: 0 !important;}
       table tr {border-collapse: collapse;border-spacing: 0 !important;}
@@ -177,7 +177,7 @@
           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee">
             <tr>
               <td align="center" bgcolor="#eeeeee">
-                <a href="http://paulgoddarddesign.com/emails/material-design" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Open Sans', monospace; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">View Online</a>
+                <a href="http://paulgoddarddesign.com/emails/material-design" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Roboto'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">View Online</a>
               </td>
             </tr>
           </table>
@@ -229,7 +229,7 @@
       <!-- START CARD 1 -->
       <tr ng-repeat ="section in test_sections">
         <td width="100%" valign="top" align="center" class="padding-container" style="padding-top: 0px!important; padding-bottom: 18px!important; mso-padding-alt: 0px 0px 18px 0px;">
-          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper">
+          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" style="margin:0px 7px">
             <tr>
               <td>
                 <table cellpadding="0" cellspacing="0" border="0">
@@ -242,18 +242,21 @@
                               <!-- START HEADER IMAGE -->
                               <tr>
                                 <td align="center" class="hund ripplelink" width="600">
-                                  <img align="center" width="600" style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important" class="hund" src="{{section.header_img_url}}">
+                                  <div ng-style="section.header_bg_gradient()"  style="border-radius: 3px 3px 0px 0px; height:120px; width: 100%; max-width: 600px!important" class="hund">
+                                    <span style="color:#fff; font-size:36px;  font-weight:bold; text-transform:uppercase; display:table-cell; height:inherit; text-align:center; vertical-align:middle">{{ section.header_text }}
+                                  </div>
+                                  <!--<img align="center" width="600" style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important" class="hund" src="{{section.header_img_url}}">-->
                                 </td>
                               </tr>
                               <!-- END HEADER IMAGE -->
                               <!-- START BODY COPY -->
                               <tr ng-repeat="article in section.content">
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                   {{article.header}}
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                   {{article.description}}
                                   <br><br>
                                   Enjoy! :)
@@ -328,12 +331,12 @@
                               <!-- END HEADER IMAGE -->
                               <!-- START BODY COPY -->
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                   Material Design Email Template
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                   This is an html email template based on Google's Material Design. This template has been tested on 33 major email clients using Litmus Builder. Feel free to use this for whatever purpose.
                                   <br><br>
                                   Enjoy! :)
@@ -395,12 +398,12 @@
                               <!-- END HEADER IMAGE -->
                               <!-- START BODY COPY -->
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                   This is a Headline
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </td>
                               </tr>
@@ -472,12 +475,12 @@
                               <!-- END HEADER IMAGE -->
                               <!-- START BODY COPY -->
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                   This is a Headline
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                <td class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                 </td>
                               </tr>
@@ -555,12 +558,12 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                             Left Column
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                                           </td>
                                         </tr>
@@ -603,12 +606,12 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                             Right Column
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                                           </td>
                                         </tr>
@@ -760,13 +763,13 @@
                           <!-- END SOCIAL -->
                         </tr>
                         <tr>
-                          <td class="td-padding" align="center" style="font-family: 'Open Sans', monospace; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 0px; padding-left: 0px!important; padding-right: 0px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 0px 0px 0px 0px;">
+                          <td class="td-padding" align="center" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 0px; padding-left: 0px!important; padding-right: 0px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 0px 0px 0px 0px;">
                             &copy; 2018 Footer Text
                           </td>
                         </tr>
                         <tr>
                           <td align="center" bgcolor="#eeeeee">
-                            <a href="*|UNSUB|*" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Open Sans', monospace; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">Unsubscribe</a>
+                            <a href="*|UNSUB|*" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Roboto'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">Unsubscribe</a>
                           </td>
                         </tr>
                       </table>
