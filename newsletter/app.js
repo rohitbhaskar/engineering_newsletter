@@ -42,7 +42,9 @@ app.controller('MainCtrl', function($scope) {
     		// Header
     		header_img_url: "https://i.imgur.com/flb3wf7.jpg",
     		header_img_name: "",
-    		header_bg_color: "",
+    		header_bg_gradient : function() {
+				  return {'background':'linear-gradient(to right, #8E2DE2, #4A00E0)'};
+				},
     		header_text: "Competitions",
 
     		// Sub-Header
