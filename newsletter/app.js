@@ -37,7 +37,7 @@ app.controller('MainCtrl', function($scope) {
 		icons:[
 			{
 				image:"",
-				image_alt_text:"Github | The Indian Engineer"
+				image_alt_text:"Github | The Indian Engineer",
 				url:"https://github.com/rohitbhaskar/engineering_newsletter"
 			},
 		]
@@ -63,17 +63,16 @@ app.controller('MainCtrl', function($scope) {
     		content: [
     			{
     				header: "Element14 | Design for a cause challenge",
-    				description: "Free Development Kit to hack around, showcase your talent and help the world. Do you need anything more exciting than that!?",
+    				description: "Free Development Kit to hack around, showcase your talent and help the world. Do you need anything more exciting than that!? (Idead Submission deadline:20th June '18)",
     				link_url: "http://bit.ly/element14_competition",
     				link_text: "element14.com"
+    			},
+    			{
+    				header: "HackerEarth | World Music Hackathon",
+    				description: "Software hackathon with themes revolving around using music(Prototype submission deadline : 1st July)",
+    				link_url: "http://bit.ly/world-music-hackathon",
+    				link_text: "hackerearth.com"
     			}
-
-    			// {
-    			// 	header: "",
-    			// 	description: "",
-    			// 	link_url: "",
-    			// 	link_text: ""
-    			// }
     		]
     	},
 
@@ -159,8 +158,8 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
-    				header: "Learn JavaScript with this amazing old-school-feel terminal game",
-    				description: "",
+    				header: "Learn Javascript by playing games",
+    				description: "Do you ever get bored learning javascript the same old way? Learn it by playing a command line game",
     				link_url: "http://bit.ly/github-javascript-game",
     				link_text: "github.com"
     			},
@@ -171,8 +170,8 @@ app.controller('MainCtrl', function($scope) {
     				link_text: "awesometalks"
     			},
     			{
-    				header: "Learn DNS over HTTP through cartoons",
-    				description: "With privacy and security being what it is now days, its good to be prepared. So here's a Firefox dev explaining DNS over HTTPS (DoH) using...well...cartoons :)",
+    				header: "DNS over HTTP explained through cartoons",
+    				description: "Like comic strips? Learn more about the working of the connected world as a Firefox dev explaining DNS over HTTPS (DoH) using...well...cartoons :)",
     				link_url: "http://bit.ly/dns-https",
     				link_text: "mozilla.org"
     			},
@@ -204,8 +203,8 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
-    				header: "Smart robotic skin that heals itself. Even if you shoot it full of holes. (Yeah you read that right)",
-    				description: "",
+    				header: "The future terminator just got another upgrade",
+    				description: "Smart robotic skin that heals itself. Even if you shoot it full of holes. (Yeah you read that right)",
     				link_url: "http://bit.ly/soft-robotic-skin",
     				link_text: "futurism.com"
     			},
