@@ -19,7 +19,11 @@ app.controller('MainCtrl', function($scope) {
     	preview_text: "Internship Oportunity | Learn JavaScript | Chess Tournament | DNA Data Storage",
 
     	// website archive url
-    	archive_link:""
+    	archive_link:"",
+
+    	// logo
+    	logo_link:"https://i.imgur.com/fZXmFqT.png",
+    	logo_alt_text:"The Indian Engineer Logo"
     }
 
     $scope.sections=[
@@ -39,7 +43,7 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
-    				header: "Elememt14 | Design for a cause challenge",
+    				header: "Element14 | Design for a cause challenge",
     				description: "Free Development Kit to hack around, showcase your talent and help the world. Do you need anything more exciting than that!?",
     				link_url: "http://bit.ly/element14_competition",
     				link_text: "element14.com"
