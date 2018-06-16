@@ -14,6 +14,13 @@ app.controller('MainCtrl', function($scope) {
     $scope.lastName= "Doe";
 
 
+    $scope.email={
+    	// text that appears along side subject
+    	preview_text: "Internship Oportunity | Learn JavaScript | Chess Tournament | DNA Data Storage",
+
+    	// website archive url
+    	archive_link:""
+    }
 
     $scope.sections=[
     	{
