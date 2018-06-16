@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="http://paulgoddarddesign.com/images/apple-icon.jpg">
     <link rel="icon" type="image/png" sizes="96x96" href="http://paulgoddarddesign.com/images/favicon.jpg">
     <title>The Indian Engineer: Newsletter</title>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="http://paulgoddarddesign.com/js/ripple.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
@@ -22,8 +22,8 @@
       .appleBody a {color:#212121; text-decoration: none;}
       .appleFooter a {color:#212121!important; text-decoration: none!important;}
       /* END iOS BLUE LINKS */
-      img {color: #ffffff;text-align: center;font-family: Work Sans, Helvetica, Arial, sans-serif;display: block;}
-      body {margin: 0;padding: 0;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;font-family: 'Work Sans', Helvetica, Arial, sans-serif!important;}
+      img {color: #ffffff;text-align: center;font-family: Roboto, Helvetica, Arial, sans-serif;display: block;}
+      body {margin: 0;padding: 0;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;font-family: 'Roboto', Helvetica, Arial, sans-serif!important;}
       body,#body_style {background: #fffffe;}
       table td {border-collapse: collapse;border-spacing: 0 !important;}
       table tr {border-collapse: collapse;border-spacing: 0 !important;}
@@ -177,7 +177,7 @@
           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="wrapper" bgcolor="#eeeeee">
             <tr>
               <td align="center" bgcolor="#eeeeee">
-                <a href="{{email.archive_link}}" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Work Sans'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">View Online</a>
+                <a href="{{email.archive_link}}" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Roboto'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">View Online</a>
               </td>
             </tr>
           </table>
@@ -201,7 +201,7 @@
                               <!-- START HEADER IMAGE -->
                               <tr>
                                 <td align="center" class="hund" width="600">
-                                  <img src="http://paulgoddarddesign.com/emails/images/material-design/material-email-logo.png" width="300" alt="Logo" border="0" style="max-width: 300px; display:block; ">
+                                  <img src="http://paulgoddarddesign.com/emails/images/material-design/material-email-logo.png" width="300" alt="{{email.logo_alt_text}}" border="0" style="max-width: 300px; display:block; ">
                                 </td>
                               </tr>
                               <!-- END HEADER IMAGE -->
@@ -255,17 +255,17 @@
                                   <table ng-repeat="article in section.content" style="width:100%">
                                     <tr>
                                       <td class="td-padding" align="left" style="font-size: 22px; font-weight:700; line-height: 28px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
-                                        <a href="{{article.link_url}}" ng-style="{'color': section.color()}" style="font-family: 'Work Sans'; text-decoration:none">{{article.header}} {{article.header_icon}}</a>
+                                        <a href="{{article.link_url}}" ng-style="{'color': section.color()}" style="font-family: 'Roboto'; text-decoration:none">{{article.header}} {{article.header_icon}}</a>
                                       </td>
                                     </tr>
                                     <tr ng-if="article.description">
-                                      <td class="td-padding" align="left" style="font-family: 'Work Sans'; font-weight:400; color: #454545!important; font-size: 18px; line-height: 24px; padding-top: 10px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 10px 18px 0px 18px;">
+                                      <td class="td-padding" align="left" style="font-family: 'Roboto'; font-weight:400; color: #454545!important; font-size: 18px; line-height: 24px; padding-top: 10px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 10px 18px 0px 18px;">
                                         {{article.description}}
                                       </td>
                                     </tr>
                                     <tr>
                                       <td class="td-padding" align="left" style="font-size: 14px; line-height: 24px; padding-top: 20px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 20px 18px 0px 18px;">
-                                        <a href="{{article.link_url}}" style="font-family: 'Work Sans'; color: #454545!important; text-decoration:none">
+                                        <a href="{{article.link_url}}" style="font-family: 'Roboto'; color: #454545!important; text-decoration:none">
                                           <span style="font-style:oblique" ng-if="!article.link_text">{{article.link_url | split:'/':2}}</span>
                                           <span style="font-style:oblique">{{article.link_text}}</span> <span ng-if="!article.link_icon"> 🔗</span>{{article.link_icon}}</a>
                                       </td>
@@ -358,12 +358,12 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Work Sans'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                             Left Column
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Work Sans'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                                           </td>
                                         </tr>
@@ -411,12 +411,12 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Work Sans'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 24px; line-height: 30px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
                                             Right Column
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Work Sans'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
+                                          <td bgcolor="#ffffff" class="td-padding" align="left" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 18px;">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                                           </td>
                                         </tr>
@@ -573,13 +573,13 @@
                           <!-- END SOCIAL -->
                         </tr>
                         <tr>
-                          <td class="td-padding" align="center" style="font-family: 'Work Sans'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 0px; padding-left: 0px!important; padding-right: 0px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 0px 0px 0px 0px;">
+                          <td class="td-padding" align="center" style="font-family: 'Roboto'; color: #212121!important; font-size: 16px; line-height: 24px; padding-top: 0px; padding-left: 0px!important; padding-right: 0px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 0px 0px 0px 0px;">
                             &copy; 2018 Footer Text
                           </td>
                         </tr>
                         <tr>
                           <td align="center" bgcolor="#eeeeee">
-                            <a href="*|UNSUB|*" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Work Sans'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">Unsubscribe</a>
+                            <a href="*|UNSUB|*" target="_blank" style="font-size: 12px; line-height: 14px; font-weight: 500; font-family: 'Roboto'; color: #212121; text-decoration: underline;padding: 0px; border: 1px solid #eeeeee; display: inline-block;">Unsubscribe</a>
                           </td>
                         </tr>
                       </table>
