@@ -242,7 +242,7 @@
                               <!-- START HEADER IMAGE -->
                               <tr>
                                 <td align="center" class="hund ripplelink" width="600">
-                                  <div ng-style="{'background-color':section.header_bg_color()}"  style="border-radius: 3px 3px 0px 0px; height:80px; width: 100%; max-width: 600px!important" class="hund">
+                                  <div ng-style="{'background-color':section.color()}"  style="border-radius: 3px 3px 0px 0px; height:80px; width: 100%; max-width: 600px!important" class="hund">
                                     <span style="color:#fff; font-size:32px;  font-weight:bold; text-transform:uppercase; display:table-cell; height:inherit; text-align:center; vertical-align:middle">{{ section.header_text }}
                                   </div>
                                   <!--<img align="center" width="600" style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important" class="hund" src="{{section.header_img_url}}">-->
@@ -255,7 +255,7 @@
                                   <table ng-repeat="article in section.content" style="width:100%">
                                     <tr>
                                       <td class="td-padding" align="left" style="font-size: 22px; font-weight:700; line-height: 28px; padding-top: 18px; padding-left: 18px!important; padding-right: 18px!important; padding-bottom: 0px!important; mso-line-height-rule: exactly; mso-padding-alt: 18px 18px 0px 13px;">
-                                        <a href="{{article.link_url}}" style="font-family: 'Work Sans'; color: #454545!important; text-decoration:none">{{article.header}} {{article.header_icon}}</a>
+                                        <a href="{{article.link_url}}" ng-style="{'color': section.color()}" style="font-family: 'Work Sans'; text-decoration:none">{{article.header}} {{article.header_icon}}</a>
                                       </td>
                                     </tr>
                                     <tr ng-if="article.description">
