@@ -14,6 +14,9 @@ app.controller('MainCtrl', function($scope) {
     $scope.lastName= "Doe";
 
 
+
+
+
     $scope.email={
     	// text that appears along side subject
     	preview_text: "Internship Oportunity | Learn JavaScript | Chess Tournament | DNA Data Storage",
@@ -25,6 +28,22 @@ app.controller('MainCtrl', function($scope) {
     	logo_link:"https://i.imgur.com/fZXmFqT.png",
     	logo_alt_text:"The Indian Engineer Logo"
     }
+
+
+
+
+
+	$scope.footer={
+		icons:[
+			{
+				image:"",
+				image_alt_text:"Github | The Indian Engineer"
+				url:"https://github.com/rohitbhaskar/engineering_newsletter"
+			},
+		]
+	}
+
+
 
     $scope.sections=[
     	{
@@ -107,8 +126,8 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
-    				header: "Net neutrality died on Monday",
-    				description: "Here lies the free and open internt...killed by greed",
+    				header: "Net neutrality dead in the states?",
+    				description: "The fallout of open and equal internet",
     				link_url: "http://bit.ly/fcc-net-neutrality",
     				link_text: "cnet.com"
     			},
@@ -219,6 +238,12 @@ app.controller('MainCtrl', function($scope) {
     				description: "Material scientists are strengthening structures using plant fibres",
     				link_url: "http://bit.ly/plant-cement",
     				link_text: "economist.com"
+    			},
+    			{
+    				header: "Tripling the energy storage of lithium-ion batteries",
+    				description: "Scientists have synthesized a new cathode material from iron fluoride that surpasses the capacity limits of traditional lithium-ion batteries",
+    				link_url: "http://bit.ly/tripling-lithium-storage",
+    				link_text: "sciencedaily.com"
     			}
     		]
     	},
