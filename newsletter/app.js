@@ -1,6 +1,14 @@
 var app = angular.module('TIAApp', []);
 
 
+app.filter('split', function() {
+        return function(input, splitChar, splitIndex) {
+            // do some bounds checking here to ensure it has that index
+            return input.split(splitChar)[splitIndex];
+        }
+    });
+
+
 app.controller('MainCtrl', function($scope) {
     $scope.firstName= "John";
     $scope.lastName= "Doe";
@@ -60,9 +68,11 @@ app.controller('MainCtrl', function($scope) {
     		content: [
     			{
     				header: "Marketing Coordinator | Zaya Learning Labs",
+    				header_icon:"",
     				description: "No stipend, but its a startup, so you'll learn a lot (Not like interns get a huge amount of money anyway ;p)",
     				link_url: "https://angel.co/zaya-learning-labs/jobs/20754-marketing-coordinator",
-    				link_text: "angel.co"
+    				link_text: "angel.co",
+    				link_icon: ""
     			}
     		]
     	},
@@ -164,6 +174,30 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
+    				header: "Smart robotic skin that heals itself. Even if you shoot it full of holes. (Yeah you read that right)",
+    				description: "",
+    				link_url: "https://futurism.com/soft-robots-skin-automatically-heals",
+    				link_text: "futurism.com"
+    			},
+    			{
+    				header: "5D Glass Discs Store 3000x More Info Than CDs",
+    				description: "",
+    				link_url: "https://futurism.com/videos/glass-future-data-storage/",
+    				link_text: "futurism.com"
+    			},
+    			{
+    				header: "WTF - A complete dashboard that runs in the terminal.",
+    				description: " Includes Google calendar, clock, weather, git repos. (It might or might not improve your work flow, but will sure as hell look cool)",
+    				link_url: "https://wtfutil.com",
+    				link_text: "wtfutil.com"
+    			},
+    			{
+    				header: "How data storage on DNA works",
+    				description: "(Yeah...either we are progressing too fast, or you're getting old quick )",
+    				link_url: "www.wolfcast.co.uk/all/2018/6/3/massive-attack-will-live-on-forever-quite-literally",
+    				link_text: "wolfcast.co.uk"
+    			},
+    			{
     				header: "",
     				description: "",
     				link_url: "",
@@ -174,7 +208,7 @@ app.controller('MainCtrl', function($scope) {
     				description: "",
     				link_url: "",
     				link_text: ""
-    			}
+    			},
     		]
     	},
 
@@ -197,9 +231,9 @@ app.controller('MainCtrl', function($scope) {
     		// Content (Body)
     		content: [
     			{
-    				header: "",
+    				header: "Chess tournament in Dadar (has an entry fee)",
     				description: "",
-    				link_url: "",
+    				link_url: "https://www.eventshigh.com/detail/Mumbai/0bf869768bb6d32e2e457da86c3f733b-dadar-saurabh-barve-blitz-rating",
     				link_text: ""
     			},
     			{
