@@ -186,7 +186,7 @@ app.controller('MainCtrl', function($scope) {
     			{
     				header: "Learn about convolutional neural networks in 2 minutes",
     				header_icon:"🕸",
-    				description: "",
+    				description: "CNN being one the top image recognition techniques, we thought why not get a quick overview for you guys!",
     				link_url: "http://bit.ly/sravjti-cnn",
     				link_text: "sra blog"
     			}
@@ -284,7 +284,7 @@ app.controller('MainCtrl', function($scope) {
     			{
     				header: "Chess tournament in Dadar (has an entry fee)",
     				header_icon:"♟",
-    				description: "",
+    				description: "Need a break from the usual tech, challenge your mind and other people for some fun games",
     				link_url: "http://bit.ly/dadar-chess-tournament",
     				link_text: "eventshigh.com"
     			},
