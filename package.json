@@ -1,0 +1,23 @@
+{
+  "name": "engineering_newsletter",
+  "version": "1.0.0",
+  "description": "A HTML newsletter specifically curated for engineering students. Also a RSS feed reader along with a easy to use sleector to choose links and articles to add into the newsletter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitbhaskar/engineering_newsletter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitbhaskar/engineering_newsletter/issues"
+  },
+  "homepage": "https://github.com/rohitbhaskar/engineering_newsletter#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10"
+  }
+}
