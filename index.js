@@ -17,4 +17,4 @@ app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname + 'newsletter/views/about.html'));
 });
 
-app.listen(process.env.PORT || 3000 );
+app.listen(process.env.PORT || 3000);
